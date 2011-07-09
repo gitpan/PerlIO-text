@@ -11,7 +11,7 @@ my %module_build_args = (
     'Encode' => '0',
     'Errno' => '0',
     'File::Find' => '0',
-    'File::Slurp' => '9999.14',
+    'File::Slurp' => '0',
     'File::Temp' => '0',
     'Module::Build' => '0.3601',
     'PerlIO::Layers' => '0',
@@ -27,7 +27,7 @@ my %module_build_args = (
     'Leon Timmermans <leont@cpan.org>'
   ],
   'dist_name' => 'PerlIO-text',
-  'dist_version' => '0.001',
+  'dist_version' => '0.002',
   'license' => 'perl',
   'module_name' => 'PerlIO::text',
   'recommends' => {},
