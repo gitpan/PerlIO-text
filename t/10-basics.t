@@ -37,7 +37,8 @@ my @lines = qw/foo bar báz/;
 
 	check_handle($fh, buffered => 1);
 	check_handle($fh, crlf => $crlf);
-	check_handle($fh, layer => { unix => 1, crlf => $crlf, encoding => 1}, utf8 => 1);
+	my @default_layers = PerlIO::get_layers(\*STDOUT);
+	check_handle($fh, layer => { map { ( $_ => 1) } @default_layers, 'encoding' }, utf8 => 1);
 
 	print $fh join "\n", @lines;
 
@@ -52,6 +53,7 @@ done_testing;
 
 sub check_handle {
 	my ($fh, $test_type, $expected) = @_;
+	local $Test::Builder::Level = $Test::Builder::Level + 1;
 	if (ref($expected)) {
 		my %compound = %{ $expected };
 		for my $subtype (keys %compound) {
