@@ -27,7 +27,7 @@ my %module_build_args = (
     'Leon Timmermans <leont@cpan.org>'
   ],
   'dist_name' => 'PerlIO-text',
-  'dist_version' => '0.004',
+  'dist_version' => '0.005',
   'license' => 'perl',
   'module_name' => 'PerlIO::text',
   'recommends' => {},

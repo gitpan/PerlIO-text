@@ -1,6 +1,6 @@
 package PerlIO::text;
 BEGIN {
-  $PerlIO::text::VERSION = '0.004';
+  $PerlIO::text::VERSION = '0.005';
 }
 use 5.008;
 use strict;
@@ -22,7 +22,7 @@ PerlIO::text - Open a text file portably
 
 =head1 VERSION
 
-version 0.004
+version 0.005
 
 =head1 SYNOPSIS
 
