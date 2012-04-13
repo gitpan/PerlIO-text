@@ -17,7 +17,7 @@ build_requires:
 configure_requires:
   Module::Build: 0.3601
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.200008, CPAN::Meta::Converter version 2.110440'
+generated_by: 'Dist::Zilla version 4.300006, CPAN::Meta::Converter version 2.120920'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -26,7 +26,9 @@ name: PerlIO-text
 requires:
   XSLoader: 0
   perl: 5.008
+  strict: 0
+  warnings: 0
 resources:
   bugtracker: http://rt.cpan.org/Public/Dist/Display.html?Name=PerlIO-text
   repository: git://github.com/Leont/perlio-text.git
-version: 0.006
+version: 0.007

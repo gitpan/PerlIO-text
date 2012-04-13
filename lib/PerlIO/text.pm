@@ -1,6 +1,6 @@
 package PerlIO::text;
-BEGIN {
-  $PerlIO::text::VERSION = '0.006';
+{
+  $PerlIO::text::VERSION = '0.007';
 }
 use 5.008;
 use strict;
@@ -18,11 +18,11 @@ XSLoader::load(__PACKAGE__, __PACKAGE__->VERSION);
 
 =head1 NAME
 
-PerlIO::text - Open a text file portably
+PerlIO::text
 
 =head1 VERSION
 
-version 0.006
+version 0.007
 
 =head1 SYNOPSIS
 
